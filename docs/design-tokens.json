@@ -1,0 +1,394 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "name": "Gold Price Tracker - Swiss Design",
+  "version": "1.0.0",
+  "description": "Design tokens for gold price tracking application following Swiss Design principles",
+  
+  "color": {
+    "primary": {
+      "500": {
+        "value": "#DC143C",
+        "type": "color",
+        "description": "Crimson red - primary accent for CTAs, up trends, active states"
+      },
+      "700": {
+        "value": "#A01028",
+        "type": "color",
+        "description": "Dark crimson - hover state for primary buttons"
+      }
+    },
+    "secondary": {
+      "500": {
+        "value": "#0057B7",
+        "type": "color",
+        "description": "International Klein Blue - down trends, secondary accent"
+      },
+      "700": {
+        "value": "#003D82",
+        "type": "color",
+        "description": "Dark blue - hover state for secondary elements"
+      }
+    },
+    "neutral": {
+      "50": {
+        "value": "#FFFFFF",
+        "type": "color",
+        "description": "Pure white - primary background"
+      },
+      "100": {
+        "value": "#F5F5F5",
+        "type": "color",
+        "description": "Off white - card backgrounds"
+      },
+      "200": {
+        "value": "#E5E5E5",
+        "type": "color",
+        "description": "Light gray - subtle backgrounds, table zebra stripes"
+      },
+      "300": {
+        "value": "#CCCCCC",
+        "type": "color",
+        "description": "Medium light gray - borders, dividers"
+      },
+      "400": {
+        "value": "#999999",
+        "type": "color",
+        "description": "Medium gray - disabled states"
+      },
+      "500": {
+        "value": "#666666",
+        "type": "color",
+        "description": "Dark gray - captions, metadata, timestamps"
+      },
+      "700": {
+        "value": "#333333",
+        "type": "color",
+        "description": "Charcoal - body text"
+      },
+      "800": {
+        "value": "#1A1A1A",
+        "type": "color",
+        "description": "Near black - secondary headings"
+      },
+      "900": {
+        "value": "#000000",
+        "type": "color",
+        "description": "Pure black - primary text, headlines, strong elements"
+      }
+    },
+    "semantic": {
+      "success": {
+        "value": "#DC143C",
+        "type": "color",
+        "description": "Price increase (red in Chinese convention)"
+      },
+      "decline": {
+        "value": "#0057B7",
+        "type": "color",
+        "description": "Price decrease (blue instead of green for Swiss harmony)"
+      },
+      "warning": {
+        "value": "#FFD700",
+        "type": "color",
+        "description": "Alert state (use on dark backgrounds only due to low contrast)"
+      },
+      "error": {
+        "value": "#DC143C",
+        "type": "color",
+        "description": "Error state, failed status"
+      }
+    }
+  },
+
+  "typography": {
+    "fontFamily": {
+      "primary": {
+        "value": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "type": "fontFamily",
+        "description": "Primary font stack - Helvetica for Swiss Design authenticity"
+      }
+    },
+    "fontSize": {
+      "display": {
+        "value": "64px",
+        "type": "dimension",
+        "description": "Page main title (h1)"
+      },
+      "headline": {
+        "value": "40px",
+        "type": "dimension",
+        "description": "Section headers (h2)"
+      },
+      "subhead": {
+        "value": "28px",
+        "type": "dimension",
+        "description": "Subsection headers (h3)"
+      },
+      "largeNumber": {
+        "value": "48px",
+        "type": "dimension",
+        "description": "Prominent gold price values"
+      },
+      "bodyLarge": {
+        "value": "20px",
+        "type": "dimension",
+        "description": "Important descriptions"
+      },
+      "body": {
+        "value": "16px",
+        "type": "dimension",
+        "description": "Standard body text, table content"
+      },
+      "small": {
+        "value": "14px",
+        "type": "dimension",
+        "description": "Secondary info, timestamps"
+      },
+      "caption": {
+        "value": "12px",
+        "type": "dimension",
+        "description": "Unit labels, footnotes"
+      }
+    },
+    "fontWeight": {
+      "regular": {
+        "value": 400,
+        "type": "number",
+        "description": "Body text, captions"
+      },
+      "medium": {
+        "value": 500,
+        "type": "number",
+        "description": "Subheadings"
+      },
+      "bold": {
+        "value": 700,
+        "type": "number",
+        "description": "Headlines, data values, buttons"
+      }
+    },
+    "lineHeight": {
+      "tight": {
+        "value": 1.0,
+        "type": "number",
+        "description": "Large numbers"
+      },
+      "heading": {
+        "value": 1.2,
+        "type": "number",
+        "description": "Headlines and subheads"
+      },
+      "body": {
+        "value": 1.5,
+        "type": "number",
+        "description": "Body text, table content"
+      },
+      "relaxed": {
+        "value": 1.6,
+        "type": "number",
+        "description": "Large body text"
+      }
+    },
+    "letterSpacing": {
+      "tighter": {
+        "value": "-0.02em",
+        "type": "dimension",
+        "description": "Display text"
+      },
+      "tight": {
+        "value": "-0.01em",
+        "type": "dimension",
+        "description": "Headlines, large numbers"
+      },
+      "normal": {
+        "value": "0",
+        "type": "dimension",
+        "description": "Body text"
+      },
+      "wide": {
+        "value": "0.01em",
+        "type": "dimension",
+        "description": "Captions"
+      },
+      "wider": {
+        "value": "0.05em",
+        "type": "dimension",
+        "description": "Uppercase navigation links, buttons"
+      }
+    }
+  },
+
+  "spacing": {
+    "xs": {
+      "value": "8px",
+      "type": "dimension",
+      "description": "Icon-text gap, tight elements"
+    },
+    "sm": {
+      "value": "16px",
+      "type": "dimension",
+      "description": "Table cell padding, form field gaps"
+    },
+    "md": {
+      "value": "24px",
+      "type": "dimension",
+      "description": "Paragraph spacing, list gaps"
+    },
+    "lg": {
+      "value": "32px",
+      "type": "dimension",
+      "description": "Card padding, block internal spacing"
+    },
+    "xl": {
+      "value": "48px",
+      "type": "dimension",
+      "description": "Major section spacing"
+    },
+    "2xl": {
+      "value": "64px",
+      "type": "dimension",
+      "description": "Page-level separation, navigation bar height"
+    },
+    "3xl": {
+      "value": "96px",
+      "type": "dimension",
+      "description": "Large block spacing (rarely used)"
+    }
+  },
+
+  "borderRadius": {
+    "none": {
+      "value": "0px",
+      "type": "dimension",
+      "description": "Default sharp corners (Swiss Design)"
+    },
+    "subtle": {
+      "value": "2px",
+      "type": "dimension",
+      "description": "Minimal rounding for buttons only"
+    }
+  },
+
+  "borderWidth": {
+    "thin": {
+      "value": "1px",
+      "type": "dimension",
+      "description": "Standard borders, table rules"
+    },
+    "medium": {
+      "value": "2px",
+      "type": "dimension",
+      "description": "Active states, focus indicators"
+    },
+    "thick": {
+      "value": "3px",
+      "type": "dimension",
+      "description": "Emphasis rules"
+    }
+  },
+
+  "boxShadow": {
+    "none": {
+      "value": "none",
+      "type": "shadow",
+      "description": "Default no shadow (Swiss flat design)"
+    },
+    "subtle": {
+      "value": "0 1px 3px rgba(0, 0, 0, 0.12)",
+      "type": "shadow",
+      "description": "Minimal card elevation (use sparingly)"
+    }
+  },
+
+  "animation": {
+    "duration": {
+      "instant": {
+        "value": "0ms",
+        "type": "duration",
+        "description": "Immediate state change"
+      },
+      "fast": {
+        "value": "150ms",
+        "type": "duration",
+        "description": "Button hover, quick interactions"
+      },
+      "normal": {
+        "value": "200ms",
+        "type": "duration",
+        "description": "Page transitions, chart updates"
+      }
+    },
+    "easing": {
+      "linear": {
+        "value": "linear",
+        "type": "cubicBezier",
+        "description": "Primary easing - objective and mechanical"
+      },
+      "easeOut": {
+        "value": "ease-out",
+        "type": "cubicBezier",
+        "description": "Subtle deceleration for page transitions"
+      }
+    }
+  },
+
+  "breakpoint": {
+    "sm": {
+      "value": "640px",
+      "type": "dimension",
+      "description": "Mobile landscape"
+    },
+    "md": {
+      "value": "768px",
+      "type": "dimension",
+      "description": "Tablet portrait - 8 column grid"
+    },
+    "lg": {
+      "value": "1024px",
+      "type": "dimension",
+      "description": "Tablet landscape - 12 column grid"
+    },
+    "xl": {
+      "value": "1280px",
+      "type": "dimension",
+      "description": "Desktop"
+    }
+  },
+
+  "grid": {
+    "columns": {
+      "mobile": {
+        "value": 4,
+        "type": "number",
+        "description": "4-column grid for mobile"
+      },
+      "tablet": {
+        "value": 8,
+        "type": "number",
+        "description": "8-column grid for tablet"
+      },
+      "desktop": {
+        "value": 12,
+        "type": "number",
+        "description": "12-column grid for desktop"
+      }
+    },
+    "gutter": {
+      "mobile": {
+        "value": "16px",
+        "type": "dimension",
+        "description": "Gutter between columns on mobile"
+      },
+      "desktop": {
+        "value": "24px",
+        "type": "dimension",
+        "description": "Gutter between columns on desktop"
+      }
+    },
+    "maxWidth": {
+      "value": "1200px",
+      "type": "dimension",
+      "description": "Maximum container width"
+    }
+  }
+}
